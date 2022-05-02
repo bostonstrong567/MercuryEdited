@@ -434,9 +434,9 @@ function Library:create(options)
 		Name = "Mercury",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "https://discord.com/Boston's-Scripts/Scripts"
+		Link = ""
 	}, options)
-
+--https://discord.com/Boston's-Scripts/Scripts
 	if getgenv and getgenv().MercuryUI then
 		getgenv():MercuryUI()
 		getgenv().MercuryUI = nil
