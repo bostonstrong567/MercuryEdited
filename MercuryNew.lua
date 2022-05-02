@@ -2825,7 +2825,7 @@ function Library:credit(options)
 			end)
 		end
 
-			if setclipboard then
+	if setclipboard then
 		if options.Discord then
 			local discordContainer = creditContainer:object("TextButton", {
 				AnchorPoint = Vector2.new(1, 1),
@@ -2881,9 +2881,8 @@ function Library:credit(options)
 
 			discordContainer.MouseButton1Click:connect(function()
 				setclipboard(options.Discord)
-			end)
-		end
-
+		end)
+	end
 			if setclipboard then
 		if options.Discord then
 			local discordContainer = creditContainer:object("TextButton", {
@@ -2962,7 +2961,7 @@ function Library:credit(options)
 			end)
 		end
 	end
-
+end
 
 	self._resize_tab({
 		container = self.creditsContainer or self.container,
