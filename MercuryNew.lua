@@ -2844,7 +2844,6 @@ function Library:credit(options)
 			end)
 		end
 	end
-end
 
 	self._resize_tab({
 		container = self.creditsContainer or self.container,
