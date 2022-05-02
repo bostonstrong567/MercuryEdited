@@ -19,7 +19,7 @@ developers:
 v3rm bostonstrong567	discord Bostonstrong#5678
 
 ]]
-print("Hi")
+
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -434,9 +434,9 @@ function Library:create(options)
 		Name = "Mercury",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = ""
+		Link = "https://discord.com/Boston's-Scripts/Scripts"
 	}, options)
---https://discord.com/Boston's-Scripts/Scripts
+
 	if getgenv and getgenv().MercuryUI then
 		getgenv():MercuryUI()
 		getgenv().MercuryUI = nil
