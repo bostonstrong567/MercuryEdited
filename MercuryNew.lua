@@ -19,7 +19,7 @@ developers:
 v3rm bostonstrong567	discord Bostonstrong#5678
 
 ]]
-
+print("Hi")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
