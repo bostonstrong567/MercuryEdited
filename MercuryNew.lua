@@ -431,7 +431,7 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = "Mercury",
+		Name = "Home",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = "https://discord.com/Boston's-Scripts/Scripts"
@@ -455,6 +455,7 @@ function Library:create(options)
 	self.CurrentTheme = options.Theme
 
 	local gui = self:object("ScreenGui", {
+		Name = "MercuryUI",
 		Parent = (RunService:IsStudio() and LocalPlayer.PlayerGui) or game:GetService("CoreGui"),
 		ZIndexBehavior = Enum.ZIndexBehavior.Global
 	})
