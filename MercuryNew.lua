@@ -1446,7 +1446,7 @@ function Library:WeakText(options)
 		Text = options.Name,
 		text.TextScaled = true,
 		text.TextWrapped = true,
-		Theme = {TextColor3 = "StrongText"},
+		Theme = {TextColor3 = "WeakText"},
 		TextXAlignment = Enum.TextXAlignment.Left
 	})
 
