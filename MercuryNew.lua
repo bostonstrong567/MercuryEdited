@@ -1405,6 +1405,29 @@ function Library:toggle(options)
 	return methods
 end
 
+function Library:text(options)
+	options = self:set_defaults({
+		Name = "Toggle",
+	)}
+
+	local toggleContainer = self.container:object("TextLabel", {
+		Theme = {BackgroundColor3 = "Secondary"},
+		Size = UDim2.new(1, -20, 0, 52)
+	}):round(7)
+
+	local text = toggleContainer:object("TextLabel", {
+		BackgroundTransparency = 1,
+		Position = UDim2.fromOffset(10, (options.Description and 5) or 0),
+		Size = (options.Description and UDim2.new(0.5, -10, 0, 22)) or UDim2.new(0.5, -10, 1, 0),
+		Text = options.Name,
+		TextSize = 22,
+		Theme = {TextColor3 = "StrongText"},
+		TextXAlignment = Enum.TextXAlignment.Left
+	})
+
+	self:_resize_tab()
+end
+
 function Library:dropdown(options)
 	options = self:set_defaults({
 		Name = "Dropdown",
