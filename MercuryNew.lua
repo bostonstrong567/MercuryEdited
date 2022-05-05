@@ -1420,8 +1420,7 @@ function Library:StrongText(options)
 		Position = UDim2.fromOffset(10, (options.Description and 5) or 0),
 		Size = (options.Description and UDim2.new(1, -10, 0, 22)) or UDim2.new(1, -10, 1, 0),
 		Text = options.Name,
-		text.TextScaled = true,
-		text.TextWrapped = true,
+		TextScaled = true,
 		Theme = {TextColor3 = "StrongText"},
 		TextXAlignment = Enum.TextXAlignment.Left
 	})
@@ -1444,8 +1443,7 @@ function Library:WeakText(options)
 		Position = UDim2.fromOffset(10, (options.Description and 5) or 0),
 		Size = (options.Description and UDim2.new(1, -10, 0, 22)) or UDim2.new(1, -10, 1, 0),
 		Text = options.Name,
-		text.TextScaled = true,
-		text.TextWrapped = true,
+		TextScaled = true,
 		Theme = {TextColor3 = "WeakText"},
 		TextXAlignment = Enum.TextXAlignment.Left
 	})
