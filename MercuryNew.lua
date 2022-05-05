@@ -1408,7 +1408,7 @@ end
 function Library:text(options)
 	options = self:set_defaults({
 		Name = "Toggle",
-	)}
+	}
 
 	local toggleContainer = self.container:object("TextLabel", {
 		Theme = {BackgroundColor3 = "Secondary"},
