@@ -1407,7 +1407,6 @@ end
 
 function Library:StrongText(options)
 	options = self:set_defaults({
-		Name = "Toggle",
 	}, options)
 
 	local toggleContainer = self.container:object("TextLabel", {
@@ -1430,7 +1429,6 @@ end
 
 function Library:WeakText(options)
 	options = self:set_defaults({
-		Name = "Toggle",
 	}, options)
 
 	local toggleContainer = self.container:object("TextLabel", {
